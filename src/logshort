@@ -128,8 +128,6 @@ function breakdiff(){
     } else {
       print pre_line
     }
-    raz(tail_words)
-    raz(tail_sizes)
     tailputx(tail_sizes, lwordsin, 1)
     tailput(tail_words, words, lwordsin)
     nseq = 0

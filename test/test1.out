@@ -1,0 +1,186 @@
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+==== 43 consecutive 100% matching 2*lines ====
+gpg: Signature faite le lun. 24 sept. 2023 10:17:43 CET
+gpg:                avec la clef RSA A2FCE7347BBC1BBA50F3F8E4B5735B7EDF46595D
+gpg: Bonne signature de « Duschmol (with no passphrase) <duschmol@foo.bar> » [ultime]
+gpg: Signature faite le lun. 24 sept. 2023 10:17:43 CET
+gpg:                avec la clef RSA A2FCE7347BBC1BBA50F3F8E4B5735B7EDF46595D
+==== 25 consecutive 93% matching 3*lines ====
+2023-09-24 10:28:31 test1@tlpbuster - aij_read(+10) bnachecked : 104395 sqdgnes - md5sum:c8f480a079b00ddbad5652da8917ef16, aagrj aagrk aagrl aagrm aagrn aagro aagrp aagrq aagrr aagrs
+aij_read - rc=0 - fin normale (aij_read -10 to undo)
+Job :IMP_INTERFACE : Id = 7005892
+. . . . . .COMPLETED_ERROR
+24/09/2023 10:28:33 [INFO ][by sopoizez] - # Début Import : IMP_INTERFACE_7005892.txt (stdin.48f).
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/COMPTE/COMPTE23-09-20_308.TXT:1] - ERR_LKIHJZ_OBJ:Account: Référence [LKJAI - 61202205] lhjistlhjo. (F_LMakoingVlkhjdror.java:429)
+==== 2 consecutive 96% matching 1*lines ====
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/COABON/COABON23-09-20_923.TXT:1] - ERR_LKIHJZ_OBJ:CsqdentUser: Référence [LKJAI - 85107400] lhjistlhjo. (F_LMakoingVlkhjdror.java:582)
+==== 2 consecutive 86% matching 1*lines ====
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTEDI/AUTEDI23-09-20_557.TXT:1] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf EDI: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:1000)
+==== 5 consecutive 93% matching 1*lines ====
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:1] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+==== 56 consecutive 93% matching 1*lines ====
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/CHARCO/CHARCO23-08-28_393.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/CLIENT/SI_CLIENT_28_08_2023_0862.TXT"
+get : rc=0 -
+==== 2 consecutive 86% matching 2*lines ====
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/COABON/COABON23-08-28_562.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/AUTKJA/AUTKJA23-08-28_243.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/AUTEDI/AUTEDI23-08-28_390.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/AUTSMS/AUTSMS23-08-28_869.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/SDFTES/SDFTES23_08_28_648.TXT"
+get : rc=0 -
+==== 2 consecutive 93% matching 2*lines ====
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/PROFIL/PROFIL23-08-28_627.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/AQKCPT/AQKCPT23-08-28_741.TXT"
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:14148
+IBAN=AP  111000000197956
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=20000
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:14154
+IBAN=AP  111000000199702
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=1000000
+XCUR=APD
+==== 150 consecutive 85% matching 9*lines ====
+FSGN=-
+FSOL=75685
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:55122
+IBAN=AP  154000000235723
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=-
+FSOL=97658
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:56238
+IBAN=AP  155000000123835
+CCUR=KHJ
+NDEC=2
+==== 3 consecutive 85% matching 9*lines ====
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:57249
+IBAN=AP  156000000075523
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=212867
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:57251
+IBAN=AP  156000000075620
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+==== 53 consecutive 85% matching 9*lines ====
+FSGN=-
+FSOL=20547
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:74502
+IBAN=AP  167410029844010
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=-
+FSOL=363797
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:74582
+IBAN=AP  167410073841076
+CCUR=APD
+NDEC=2
+==== 39 consecutive 85% matching 9*lines ====
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:86548
+IBAN=AP  231000000192322
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=200000
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:87908
+IBAN=AP  231458699453048
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+==== 206 consecutive 85% matching 9*lines ====
+FSGN=-
+FSOL=4748
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:142534
+IBAN=AP  374000000094596
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=45849649
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:160285
+IBAN=AP  423000000131237
+CCUR=APD
+NDEC=2
+==== 84 consecutive 85% matching 9*lines ====
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:168694
+IBAN=AP  429458504876011
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=41642
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:168708
+IBAN=AP  429458505296021
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+==== 10 consecutive 85% matching 9*lines ====
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:171065
+IBAN=AP  433000000075447
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=13699
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:172641
+IBAN=AP  434223609151088
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+==== 7 consecutive 85% matching 9*lines ====

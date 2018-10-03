@@ -1,0 +1,859 @@
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+aij_read - rc=1 - dsn q sqdre
+opajdeeimport - rc=1
+gpg: Signature faite le lun. 24 sept. 2023 10:17:43 CET
+gpg:                avec la clef RSA A2FCE7347BBC1BBA50F3F8E4B5735B7EDF46595D
+gpg: Bonne signature de « Duschmol (with no passphrase) <duschmol@foo.bar> » [ultime]
+gpg: Signature faite le lun. 24 sept. 2023 10:17:43 CET
+gpg:                avec la clef RSA A2FCE7347BBC1BBA50F3F8E4B5735B7EDF46595D
+gpg: Bonne signature de « Duschmol (with no passphrase) <duschmol@foo.bar> » [ultime]
+gpg: Signature faite le lun. 24 sept. 2023 10:17:43 CET
+gpg:                avec la clef RSA A2FCE7347BBC1BBA50F3F8E4B5735B7EDF46595D
+gpg: Bonne signature de « Duschmol (with no passphrase) <duschmol@foo.bar> » [ultime]
+gpg: Signature faite le lun. 24 sept. 2023 10:17:44 CET
+gpg:                avec la clef RSA A2FCE7347BBC1BBA50F3F8E4B5735B7EDF46595D
+gpg: Bonne signature de « Duschmol (with no passphrase) <duschmol@foo.bar> » [ultime]
+gpg: Signature faite le lun. 24 sept. 2023 10:17:44 CET
+gpg:                avec la clef RSA A2FCE7347BBC1BBA50F3F8E4B5735B7EDF46595D
+gpg: Bonne signature de « Duschmol (with no passphrase) <duschmol@foo.bar> » [ultime]
+gpg: Signature faite le lun. 24 sept. 2023 10:17:53 CET
+gpg:                avec la clef RSA A2FCE7347BBC1BBA50F3F8E4B5735B7EDF46595D
+gpg: Bonne signature de « Duschmol (with no passphrase) <duschmol@foo.bar> » [ultime]
+gpg: Signature faite le lun. 24 sept. 2023 10:17:57 CET
+gpg:                avec la clef RSA A2FCE7347BBC1BBA50F3F8E4B5735B7EDF46595D
+gpg: Bonne signature de « Duschmol (with no passphrase) <duschmol@foo.bar> » [ultime]
+gpg: Signature faite le lun. 24 sept. 2023 10:17:58 CET
+gpg:                avec la clef RSA A2FCE7347BBC1BBA50F3F8E4B5735B7EDF46595D
+gpg: Bonne signature de « Duschmol (with no passphrase) <duschmol@foo.bar> » [ultime]
+gpg: Signature faite le lun. 24 sept. 2023 10:27:54 CET
+gpg:                avec la clef RSA A2FCE7347BBC1BBA50F3F8E4B5735B7EDF46595D
+gpg: Bonne signature de « Duschmol (with no passphrase) <duschmol@foo.bar> » [ultime]
+gpg: Signature faite le lun. 24 sept. 2023 10:28:24 CET
+gpg:                avec la clef RSA A2FCE7347BBC1BBA50F3F8E4B5735B7EDF46595D
+gpg: Bonne signature de « Duschmol (with no passphrase) <duschmol@foo.bar> » [ultime]
+2023-09-24 10:28:31 test1@tlpbuster - aij_read(+10) bnachecked : 104395 sqdgnes - md5sum:c8f480a079b00ddbad5652da8917ef16, aagrj aagrk aagrl aagrm aagrn aagro aagrp aagrq aagrr aagrs
+aij_read - rc=0 - fin normale (aij_read -10 to undo)
+Job :IMP_INTERFACE : Id = 7005892
+. . . . . .COMPLETED_ERROR
+24/09/2023 10:28:33 [INFO ][by sopoizez] - # Début Import : IMP_INTERFACE_7005892.txt (stdin.48f).
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/COMPTE/COMPTE23-09-20_308.TXT:1] - ERR_LKIHJZ_OBJ:Account: Référence [LKJAI - 61202205] lhjistlhjo. (F_LMakoingVlkhjdror.java:429)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/COMPTE/COMPTE23-09-20_308.TXT:2] - ERR_LKIHJZ_OBJ:Account: Référence [LKJAI - 61202205] lhjistlhjo. (F_LMakoingVlkhjdror.java:429)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/COMPTE/COMPTE23-09-20_308.TXT:13] - ERR_LKIHJZ_OBJ:Account: Référence [LKJAI - 61202205] lhjistlhjo. (F_LMakoingVlkhjdror.java:429)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/COABON/COABON23-09-20_923.TXT:1] - ERR_LKIHJZ_OBJ:CsqdentUser: Référence [LKJAI - 85107400] lhjistlhjo. (F_LMakoingVlkhjdror.java:582)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/COABON/COABON23-09-20_923.TXT:2] - ERR_LKIHJZ_OBJ:CsqdentUser: Référence [CIDE - 197VV235] lhjistlhjo. (F_LMakoingVlkhjdror.java:614)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/COABON/COABON23-09-20_923.TXT:3] - ERR_LKIHJZ_OBJ:CsqdentUser: Référence [CIDE - 74722856] lhjistlhjo. (F_LMakoingVlkhjdror.java:614)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTEDI/AUTEDI23-09-20_557.TXT:1] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf EDI: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:1000)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTEDI/AUTEDI23-09-20_557.TXT:2] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf EDI: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:1000)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTEDI/AUTEDI23-09-20_557.TXT:3] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf EDI: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:1000)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTEDI/AUTEDI23-09-20_557.TXT:4] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf EDI: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:1000)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTEDI/AUTEDI23-09-20_557.TXT:5] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf EDI: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:1000)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTEDI/AUTEDI23-09-20_557.TXT:6] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf EDI: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:1000)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:1] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:2] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:3] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:4] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:5] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:6] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:7] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:8] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:9] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:10] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:11] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:12] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:13] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:14] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:15] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:16] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:17] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:23] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:19] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:20] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:21] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:22] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:23] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:24] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:25] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:26] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:27] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:28] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:29] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:30] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:31] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:32] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:33] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:34] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:35] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:36] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:37] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:38] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:39] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:40] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:41] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:42] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:43] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:44] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:45] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:46] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:47] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:48] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:49] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:50] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:51] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:52] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:53] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:54] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:55] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:56] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:57] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 95415979] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/CHARCO/CHARCO23-08-28_393.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/CLIENT/SI_CLIENT_28_08_2023_0862.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/COMPTE/COMPTE23_08_28_261.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/COABON/COABON23-08-28_562.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/AUTKJA/AUTKJA23-08-28_243.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/AUTEDI/AUTEDI23-08-28_390.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/AUTSMS/AUTSMS23-08-28_869.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/SDFTES/SDFTES23_08_28_648.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/SDFTES/SDFTES23_08_28_649.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/PROFIL/PROFIL23-08-28_627.TXT"
+get : rc=0 -
+get : share jok/proxy-kjhlkhj-21 serving key "KJA/AQKCPT/AQKCPT23-08-28_741.TXT"
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:14148
+IBAN=AP  111000000197956
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=20000
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:14154
+IBAN=AP  111000000199702
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=1000000
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:15635
+IBAN=AP  111410060810083
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=22364995
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:16050
+IBAN=AP  111458503151052
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=462660
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:17653
+IBAN=AP  115410008272064
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=893005
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:17879
+IBAN=AP  115458617364084
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=17858
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:23280
+IBAN=AP  117000000134994
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=100000
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:23282
+IBAN=AP  117000000135091
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=986910
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:23326
+IBAN=AP  117223641576093
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=658137625
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:23426
+IBAN=AP  117400214392066
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=528638515
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:27147
+IBAN=AP  125410026926022
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=12166957
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:27395
+IBAN=AP  125458510206035
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=31608
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:33880
+IBAN=AP  138000000219886
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=857200
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:35339
+IBAN=AP  138410126715092
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=215022
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:42419
+IBAN=AP  147000000225935
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=5000253
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:42421
+IBAN=AP  147000000226032
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=10000
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:53520
+IBAN=AP  152400250630001
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=125364947
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:54605
+IBAN=AP  153400235084052
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=45490608
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:54985
+IBAN=AP  154000000107536
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=-
+FSOL=75685
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:55122
+IBAN=AP  154000000235723
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=-
+FSOL=97658
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:56238
+IBAN=AP  155000000123835
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=10000
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:57249
+IBAN=AP  156000000075523
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=212867
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:57251
+IBAN=AP  156000000075620
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=59226
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:60944
+IBAN=AP  158000000122662
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=10000000
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:60952
+IBAN=AP  158000000125669
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=2000000
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:60954
+IBAN=AP  158000000125766
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=50000
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:67008
+IBAN=AP  161000000139681
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=10000000
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:67115
+IBAN=AP  161410078945031
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=60714793
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:67123
+IBAN=AP  161410088841068
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=-
+FSOL=20547
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:74502
+IBAN=AP  167410029844010
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=-
+FSOL=363797
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:74582
+IBAN=AP  167410073841076
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=-
+FSOL=23398
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:74882
+IBAN=AP  167416029844097
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=26793286
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:86024
+IBAN=AP  231000000004239
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=-
+FSOL=520092
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:86232
+IBAN=AP  231000000104537
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=499205
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:86234
+IBAN=AP  231000000104634
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=166000
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:86548
+IBAN=AP  231000000192322
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=200000
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:87908
+IBAN=AP  231458699453048
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=102735
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:89041
+IBAN=AP  233000000014227
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=141489924
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:89043
+IBAN=AP  233000000023010
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=102313342
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:92850
+IBAN=AP  235400229553064
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=36895794
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:93456
+IBAN=AP  237000000039441
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=1975205
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:93488
+IBAN=AP  237000000077174
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=100000
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:93613
+IBAN=AP  237400231450090
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=819387
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:95764
+IBAN=AP  194000000036472
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=389000
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:95841
+IBAN=AP  194000000069258
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=2602502
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:95967
+IBAN=AP  194223804153070
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=91932906
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:104091
+IBAN=AP  205410066315080
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=5786602
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:109030
+IBAN=AP  231000000094956
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=10000
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:109032
+IBAN=AP  231000000095926
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=1000000
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:116664
+IBAN=AP  250400219502069
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=940163
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:120939
+IBAN=AP  323000000129023
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=5000000
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:120941
+IBAN=AP  323000000129212
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=100000
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:120943
+IBAN=AP  323000000129406
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=20000000
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:131740
+IBAN=AP  334000000150528
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=6279157
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:131742
+IBAN=AP  334000000150625
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=107740
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:131773
+IBAN=AP  334000000233120
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=50000
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:133324
+IBAN=AP  334416174713007
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=9201232
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:134819
+IBAN=AP  360000000042140
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=524000
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:134821
+IBAN=AP  360000000042237
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=30000
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:135053
+IBAN=AP  360410054645020
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=-
+FSOL=4748
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:142534
+IBAN=AP  374000000094596
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=45849649
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:160285
+IBAN=AP  423000000131237
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=-
+FSOL=24963
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:160287
+IBAN=AP  423000000133371
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=65503125
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:166873
+IBAN=AP  428000000046694
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=2900000
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:167352
+IBAN=AP  428410063565038
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=37910
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:168062
+IBAN=AP  429000000077393
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=107311355
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:168555
+IBAN=AP  429410108002046
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=45045123
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:168561
+IBAN=AP  429410109004056
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=672346
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:168571
+IBAN=AP  429410110452072
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=1697672
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:168588
+IBAN=AP  429410111616072
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=1632392
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:168690
+IBAN=AP  429458504666006
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=282673
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:168694
+IBAN=AP  429458504876011
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=41642
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:168708
+IBAN=AP  429458505296021
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=1284
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:171063
+IBAN=AP  433000000075350
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=-
+FSOL=258129
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:171065
+IBAN=AP  433000000075447
+CCUR=KHJ
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=13699
+XCUR=KHJ
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:172641
+IBAN=AP  434223609151088
+CCUR=APD
+NDEC=2
+FDAT=Mon Aug 27 00:00:00 CET 2023
+FSGN=+
+FSOL=1074232350
+XCUR=APD
+=====}
+====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:172643
+IBAN=AP  434223609335097
+CCUR=APD
+NDEC=2

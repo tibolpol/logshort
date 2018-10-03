@@ -1,0 +1,172 @@
+#!/usr/bin/awk -f
+# stdin : logfile
+# stdout : copy replacing consecutive stable lines by a single placeholder
+# Comparison is done not by character but by word
+# Synopsis : $myname [ argscore=number ] [ argsep=regexp ] [ argntail=number ]
+# argscore = min stability score, default 0.85
+# argsep = word separator, default "[-:;=/ \[\],{}()]+"
+# argntail = max number of lines in single match
+
+BEGIN {
+  if (argscore == "") argscore = 0.85
+  if (argsep == "") argsep = "[-:;=/ \\[\\],{}()]+"
+  if (argntail == "") argntail = 10
+  argntail+=argntail
+  tail_sizes[0] = ""
+  tail_words[0] = ""
+  raz(tail_sizes)
+  raz(tail_words)
+}
+
+# append e to tail,
+# keep tail size below depth by outshifting left items,
+# return first outshifted item
+function tailput(tail, e, depth,
+  l, f, el, result) {
+  l = alength(tail)
+  el = alength(e)
+  f = depth - el - l
+  if (f > 0) {
+    f = 0
+  }
+  for (i = 1; i <= l; i++) {
+    f++
+    if (0 < f && f <= depth) {
+      if (f < i) {
+        if (f == 1) {
+          result = tail[1]
+        }
+        tail[f] = tail[i]
+      }
+    }
+    if (depth < i) {
+      delete tail[i]
+    }
+  }
+  for (i = 1; i <= el; i++) {
+    f++
+    if (0 < f && f <= depth) {
+      if (f == 1) {
+        result = tail[1]
+      }
+      tail[f] = e[i]
+    }
+  }
+  return result
+}
+
+function tailputx(tail, x, depth,
+  e) {
+  e[1] = x
+  return tailput(tail, e, depth)
+}
+
+# erase array
+function raz(to) {
+  for (i in to) {
+    delete to[i]
+  }
+}
+
+# copy array
+function arraycopy(from, to) {
+  raz(to)
+  for (i in from) {
+    to[i] = from[i]
+  }
+}
+
+# rotate array
+function leftrotate(from, rotate,
+  l, x, j) {
+  l = alength(from)
+  if (rotate % l != 0) {
+    arraycopy(from,x)
+    for (i = 1; i <= l; i++) {
+      j = (i + rotate - 1) % l + 1
+      from[i] = x[j]
+    }
+  }
+}
+
+# array length (not builtin in mawk)
+function alength(from,
+  result) {
+  for (i in from) {
+    result++
+  }
+  return result
+}
+
+# Compare contiguous right parts of array a, of length rightin,
+# neweq maps {false,true} to each {different,equal} element and must be erased
+# before call when we want a new comparison without stability history.
+# return stability score [0-1]
+function cmp_with_history(a, rightin, neweq,
+  stabq, result, beq, left, right) {
+  arraycopy(neweq, stabq)
+  raz(neweq)
+  right = alength(a) - rightin
+  left = right - rightin
+  if (left >= 0) {
+    for (i = 1; i <= rightin; i++) {
+      neweq[i] = beq = i <= rightin && ((!(i in stabq)) || stabq[i]) && a[i + left] == a[i + right]
+      if (beq) {
+        result++
+      }
+    }
+    if (i > 1) {
+      return result / (i-1)
+    }
+  }
+}
+
+function breakdiff(){
+  if (nseq > 0) {
+    if (nseq > 1) {
+      print "==== "nseq" consecutive "int(pre_score * 100)"% matching "shift/2-1"*lines ===="
+    } else {
+      print pre_line
+    }
+    raz(tail_words)
+    raz(tail_sizes)
+    tailputx(tail_sizes, lwordsin, 1)
+    tailput(tail_words, words, lwordsin)
+    nseq = 0
+  }
+}
+
+{
+  lwordsin = split($0, words, argsep)
+  lwordsout = tailputx(tail_sizes, lwordsin, argntail)
+  tailput(tail_words, words, alength(tail_words) + lwordsin - lwordsout)
+  lsize = alength(tail_sizes)
+  score = 0
+  if (nseq == 0) {
+    right = both = 0
+    for (shift = 2; shift <= lsize && score < argscore; shift+=2) {
+      right = right + tail_sizes[lsize + 1 - (shift / 2)]
+      both = both + tail_sizes[lsize - shift + 1] + tail_sizes[lsize - shift + 2]
+      left = both - right
+      raz(eqwords)
+      if (left == right) {
+        score = cmp_with_history(tail_words, right, eqwords)
+      }
+    }
+  } else {
+    leftrotate(eqwords, lwordsin)
+    score = cmp_with_history(tail_words, right, eqwords)
+  }
+  if (score >= argscore) {
+    pre_score = score
+    pre_line = $0
+    nseq++
+  } else {
+    breakdiff()
+    print
+  }
+}
+
+END {
+  breakdiff()
+}

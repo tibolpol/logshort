@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mydir="$(dirname "$0")"
+"$mydir/../src/logshort" < "$mydir/test1.in" | diff - "$mydir/test1.out"

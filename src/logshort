@@ -5,13 +5,12 @@
 # Synopsis : $myname [ argscore=number ] [ argsep=regexp ] [ argntail=number ]
 # argscore = min stability score, default 0.85
 # argsep = word separator, default "[-:;=/ \[\],{}()]+"
-# argntail = max number of lines in single match
+# argntail = max number of lines in single match, default 10
 
 BEGIN {
   if (argscore == "") argscore = 0.85
   if (argsep == "") argsep = "[-:;=/ \\[\\],{}()]+"
   if (argntail == "") argntail = 10
-  argntail+=argntail
   tail_sizes[0] = ""
   tail_words[0] = ""
   raz(tail_sizes)
@@ -136,7 +135,7 @@ function breakdiff(){
 
 {
   lwordsin = split($0, words, argsep)
-  lwordsout = tailputx(tail_sizes, lwordsin, argntail)
+  lwordsout = tailputx(tail_sizes, lwordsin, argntail * 2)
   tailput(tail_words, words, alength(tail_words) + lwordsin - lwordsout)
   lsize = alength(tail_sizes)
   score = 0

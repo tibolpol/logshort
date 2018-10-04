@@ -5,7 +5,7 @@ Comparison is done not by character but by word. Detect multi-line pattern.
 Language is Awk.
 
 Could be considered as a human-readable lossy text compression, fitting well for reporting huge repetitive log files.
-Performance is very poor with large window, but compression rate is good since it is done for human readability.
+Performance is very poor with large window, but compression rate is good since it is done for human readability. I use it in cron jobs to drastically shrink logs in report mails.
 
 <pre>test1@tlpbuster:~$ time logshort < /tmp/log >/tmp/x
 real    2m18,955s

@@ -7,7 +7,7 @@ Language is Awk.
 Could be considered as a human-readable lossy text compression, fitting well for reporting huge repetitive log files.
 Performance is very poor with large window, but compression rate is good since it is done for human readability.
 
-<pre>test1@tlpbuster:~$ time logshort </tmp/log >/tmp/x
+<pre>test1@tlpbuster:~$ time logshort < /tmp/log >/tmp/x
 real    2m18,955s
 user    2m18,566s
 sys     0m0,345s
@@ -15,7 +15,7 @@ test1@tlpbuster:~$ time logshort argntail=3 < /tmp/log >/tmp/x1
 real    0m46,657s
 user    0m46,184s
 sys     0m0,373s
-test1@tlpbuster:~$ time gzip </tmp/log >/tmp/y
+test1@tlpbuster:~$ time gzip < /tmp/log >/tmp/y
 real    0m0,684s
 user    0m0,639s
 sys     0m0,045s

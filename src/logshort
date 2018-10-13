@@ -11,15 +11,13 @@ BEGIN {
   if (argscore == "") argscore = 0.85
   if (argsep == "") argsep = "[-:;=/ \\[\\],{}()]+"
   if (argntail == "") argntail = 10
-  tail_sizes[0] = ""
-  tail_words[0] = ""
-  raz(tail_sizes)
-  raz(tail_words)
+  delete tail_sizes[0]
+  delete tail_words[0]
 }
 
 # append e to tail,
 # keep tail size below depth by outshifting left items,
-# return first outshifted item
+# return sum of outshifted items
 function tailput(tail, e, depth,
   l, f, el, result) {
   l = alength(tail)
@@ -30,26 +28,22 @@ function tailput(tail, e, depth,
   }
   for (i = 1; i <= l; i++) {
     f++
-    if (0 < f && f <= depth) {
-      if (f < i) {
-        if (f == 1) {
-          result = tail[1]
-        }
-        tail[f] = tail[i]
-      }
-    }
-    if (depth < i) {
-      delete tail[i]
+    if (f <= 0) {
+      result += tail[1-f]
+    } else if (f <= depth && f < i) {
+      tail[f] = tail[i]
     }
   }
   for (i = 1; i <= el; i++) {
     f++
-    if (0 < f && f <= depth) {
-      if (f == 1) {
-        result = tail[1]
-      }
+    if (f <= 0) {
+      result += tail[1-f]
+    } else if (f <= depth) {
       tail[f] = e[i]
     }
+  }
+  for (i = depth + 1; i <= l; i++) {
+    delete tail[i]
   }
   return result
 }
@@ -120,37 +114,38 @@ function cmp_with_history(a, rightin, neweq,
   }
 }
 
-function breakdiff(){
+function breakdiff(e){
   if (nseq > 0) {
     if (nseq > 1) {
-      print "==== "nseq" consecutive "int(pre_score * 100)"% matching "shift/2-1"*lines ===="
+      print "==== "nseq" consecutive "int(pre_score * 100)"% matching "window / 2"*lines ===="
     } else {
       print pre_line
     }
-    tailputx(tail_sizes, lwordsin, 1)
-    tailput(tail_words, words, lwordsin)
     nseq = 0
+    delete e[0]
+    tailput(tail_words, e, alength(tail_words) - tailput(tail_sizes, e, 1))
   }
 }
 
 {
   lwordsin = split($0, words, argsep)
-  lwordsout = tailputx(tail_sizes, lwordsin, argntail * 2)
-  tailput(tail_words, words, alength(tail_words) + lwordsin - lwordsout)
-  lsize = alength(tail_sizes)
   score = 0
   if (nseq == 0) {
+    tailput(tail_words, words, alength(tail_words) + lwordsin - tailputx(tail_sizes, lwordsin, argntail*2))
+    lsize = alength(tail_sizes)
     right = both = 0
-    for (shift = 2; shift <= lsize && score < argscore; shift+=2) {
-      right = right + tail_sizes[lsize + 1 - (shift / 2)]
-      both = both + tail_sizes[lsize - shift + 1] + tail_sizes[lsize - shift + 2]
+    for (window = 2; window <= lsize && score < argscore; window += 2) {
+      right = right + tail_sizes[lsize + 1 - (window / 2)]
+      both = both + tail_sizes[lsize - window + 1] + tail_sizes[lsize - window + 2]
       left = both - right
       raz(eqwords)
       if (left == right) {
         score = cmp_with_history(tail_words, right, eqwords)
       }
     }
+    window -= 2
   } else {
+    tailput(tail_words, words, alength(tail_words) + lwordsin - tailputx(tail_sizes, lwordsin, window))
     leftrotate(eqwords, lwordsin)
     score = cmp_with_history(tail_words, right, eqwords)
   }

@@ -114,7 +114,10 @@ function cmp_with_history(a, rightin, neweq,
   }
 }
 
-function breakdiff(e){
+# Break similar sequence
+# in : pre_line, pre_score, pre_window 
+# inout : nseq
+function breakdiff() {
   if (nseq > 0) {
     if (nseq > 1) {
       print "==== "nseq" consecutive "int(pre_score * 100)"% matching "pre_window / 2"*lines ===="
@@ -125,6 +128,22 @@ function breakdiff(e){
   }
 }
 
+# Enlarge window as much as possible until score match
+# in : lsizes, tail_sizes, tail_words, argscore
+# inout : right, both, window
+# out : score, left, eqwords
+function growindow() {
+  for ( ; window <= lsizes && score < argscore; window += 2) {
+    right = right + tail_sizes[lsizes + 1 - (window / 2)]
+    both = both + tail_sizes[lsizes - window + 1] + tail_sizes[lsizes - window + 2]
+    left = both - right
+    if (left == right) {
+      raz(eqwords)
+      score = cmp_with_history(tail_words, right, eqwords)
+    }
+  }
+}
+
 {
   lwordsin = split($0, words, argsep)
   score = 0
@@ -132,15 +151,8 @@ function breakdiff(e){
   lsizes = alength(tail_sizes)
   if (nseq == 0) {
     right = both = 0
-    for (window = 2; window <= lsizes && score < argscore; window += 2) {
-      right = right + tail_sizes[lsizes + 1 - (window / 2)]
-      both = both + tail_sizes[lsizes - window + 1] + tail_sizes[lsizes - window + 2]
-      left = both - right
-      raz(eqwords)
-      if (left == right) {
-        score = cmp_with_history(tail_words, right, eqwords)
-      }
-    }
+    window = 2
+    growindow()
   } else {
     right = right + lwordsin - tail_sizes[lsizes - (pre_window / 2)]
     if (left == right) {
@@ -148,15 +160,8 @@ function breakdiff(e){
       score = cmp_with_history(tail_words, right, eqwords)
     }
     if (score < argscore) {
-      for ( ; window <= lsizes && score < argscore ; window += 2) {
-        right = right + tail_sizes[lsizes + 1 - (window / 2)]
-        both = both + tail_sizes[lsizes - window + 1] + tail_sizes[lsizes - window + 2]
-        left = both - right
-        raz(eqwords)
-        if (left == right) {
-          score = cmp_with_history(tail_words, right, eqwords)
-        }
-      }
+      both = left + right
+      growindow()
     }
   }
   if (score >= argscore) {

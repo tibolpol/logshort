@@ -117,41 +117,52 @@ function cmp_with_history(a, rightin, neweq,
 function breakdiff(e){
   if (nseq > 0) {
     if (nseq > 1) {
-      print "==== "nseq" consecutive "int(pre_score * 100)"% matching "window / 2"*lines ===="
+      print "==== "nseq" consecutive "int(pre_score * 100)"% matching "pre_window / 2"*lines ===="
     } else {
       print pre_line
     }
     nseq = 0
-    delete e[0]
-    tailput(tail_words, e, alength(tail_words) - tailput(tail_sizes, e, 1))
   }
 }
 
 {
   lwordsin = split($0, words, argsep)
   score = 0
+  tailput(tail_words, words, alength(tail_words) + lwordsin - tailputx(tail_sizes, lwordsin, argntail*2))
+  lsizes = alength(tail_sizes)
   if (nseq == 0) {
-    tailput(tail_words, words, alength(tail_words) + lwordsin - tailputx(tail_sizes, lwordsin, argntail*2))
-    lsize = alength(tail_sizes)
     right = both = 0
-    for (window = 2; window <= lsize && score < argscore; window += 2) {
-      right = right + tail_sizes[lsize + 1 - (window / 2)]
-      both = both + tail_sizes[lsize - window + 1] + tail_sizes[lsize - window + 2]
+    for (window = 2; window <= lsizes && score < argscore; window += 2) {
+      right = right + tail_sizes[lsizes + 1 - (window / 2)]
+      both = both + tail_sizes[lsizes - window + 1] + tail_sizes[lsizes - window + 2]
       left = both - right
       raz(eqwords)
       if (left == right) {
         score = cmp_with_history(tail_words, right, eqwords)
       }
     }
-    window -= 2
   } else {
-    tailput(tail_words, words, alength(tail_words) + lwordsin - tailputx(tail_sizes, lwordsin, window))
-    leftrotate(eqwords, lwordsin)
-    score = cmp_with_history(tail_words, right, eqwords)
+    right = right + lwordsin - tail_sizes[lsizes - (pre_window / 2)]
+    if (left == right) {
+      leftrotate(eqwords, lwordsin)
+      score = cmp_with_history(tail_words, right, eqwords)
+    }
+    if (score < argscore) {
+      for ( ; window <= lsizes && score < argscore ; window += 2) {
+        right = right + tail_sizes[lsizes + 1 - (window / 2)]
+        both = both + tail_sizes[lsizes - window + 1] + tail_sizes[lsizes - window + 2]
+        left = both - right
+        raz(eqwords)
+        if (left == right) {
+          score = cmp_with_history(tail_words, right, eqwords)
+        }
+      }
+    }
   }
   if (score >= argscore) {
     pre_score = score
     pre_line = $0
+    pre_window = window - 2
     nseq++
   } else {
     breakdiff()

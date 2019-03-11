@@ -14,9 +14,9 @@ Job :IMP_INTERFACE : Id = 7005892
 . . . . . .COMPLETED_ERROR
 24/09/2023 10:28:33 [INFO ][by sopoizez] - # Début Import : IMP_INTERFACE_7005892.txt (stdin.48f).
  24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/COMPTE/COMPTE23-09-20_308.TXT:1] - ERR_LKIHJZ_OBJ:Account: Référence [LKJAI - 61202205] lhjistlhjo. (F_LMakoingVlkhjdror.java:429)
-==== 2 consecutive 96% matching 1*lines ====
- 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/COABON/COABON23-09-20_923.TXT:1] - ERR_LKIHJZ_OBJ:CsqdentUser: Référence [LKJAI - 85107400] lhjistlhjo. (F_LMakoingVlkhjdror.java:582)
-==== 2 consecutive 86% matching 1*lines ====
+==== 3 consecutive 86% matching 2*lines ====
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/COABON/COABON23-09-20_923.TXT:2] - ERR_LKIHJZ_OBJ:CsqdentUser: Référence [CIDE - 197VV235] lhjistlhjo. (F_LMakoingVlkhjdror.java:614)
+ 24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/COABON/COABON23-09-20_923.TXT:3] - ERR_LKIHJZ_OBJ:CsqdentUser: Référence [CIDE - 74722856] lhjistlhjo. (F_LMakoingVlkhjdror.java:614)
  24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTEDI/AUTEDI23-09-20_557.TXT:1] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf EDI: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:1000)
 ==== 5 consecutive 93% matching 1*lines ====
  24/09/2023 10:35:11 [ERROR][by sopoizez] - [import sequence:ftp://***@kjhlkhj/DCICLI/AUTKJA/AUTKJA23-09-20_645.TXT:1] - ERR_LKIHJZ_OBJ:Auloihjoinizasdf: Référence [LKJAI - 94605538] lhjistlhjo. (F_LMakoingVlkhjdror.java:774)
@@ -59,23 +59,7 @@ FSOL=1000000
 XCUR=APD
 ==== 150 consecutive 85% matching 9*lines ====
 FSGN=-
-FSOL=75685
-XCUR=APD
-=====}
-====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:55122
-IBAN=AP  154000000235723
-CCUR=APD
-NDEC=2
-FDAT=Mon Aug 27 00:00:00 CET 2023
-FSGN=-
-FSOL=97658
-XCUR=APD
-=====}
-====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:56238
-IBAN=AP  155000000123835
-CCUR=KHJ
-NDEC=2
-==== 3 consecutive 85% matching 9*lines ====
+==== 19 consecutive 85% matching 9*lines ====
 XCUR=KHJ
 =====}
 ====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:57249
@@ -83,89 +67,22 @@ IBAN=AP  156000000075523
 CCUR=APD
 NDEC=2
 FDAT=Mon Aug 27 00:00:00 CET 2023
-FSGN=+
-FSOL=212867
-XCUR=APD
-=====}
-====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:57251
-IBAN=AP  156000000075620
-CCUR=KHJ
-NDEC=2
-FDAT=Mon Aug 27 00:00:00 CET 2023
-FSGN=+
-==== 53 consecutive 85% matching 9*lines ====
+==== 63 consecutive 85% matching 9*lines ====
 FSGN=-
-FSOL=20547
-XCUR=APD
-=====}
-====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:74502
-IBAN=AP  167410029844010
-CCUR=APD
-NDEC=2
-FDAT=Mon Aug 27 00:00:00 CET 2023
-FSGN=-
-FSOL=363797
-XCUR=APD
-=====}
-====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:74582
-IBAN=AP  167410073841076
-CCUR=APD
-NDEC=2
-==== 39 consecutive 85% matching 9*lines ====
+==== 55 consecutive 85% matching 9*lines ====
 XCUR=KHJ
-=====}
-====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:86548
-IBAN=AP  231000000192322
-CCUR=APD
-NDEC=2
-FDAT=Mon Aug 27 00:00:00 CET 2023
-FSGN=+
-FSOL=200000
-XCUR=APD
-=====}
-====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:87908
-IBAN=AP  231458699453048
-CCUR=KHJ
-NDEC=2
-FDAT=Mon Aug 27 00:00:00 CET 2023
-FSGN=+
-==== 206 consecutive 85% matching 9*lines ====
+==== 222 consecutive 85% matching 9*lines ====
 FSGN=-
 FSOL=4748
 XCUR=APD
 =====}
 ====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:142534
 IBAN=AP  374000000094596
-CCUR=APD
-NDEC=2
-FDAT=Mon Aug 27 00:00:00 CET 2023
-FSGN=+
-FSOL=45849649
-XCUR=APD
-=====}
-====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:160285
-IBAN=AP  423000000131237
-CCUR=APD
-NDEC=2
-==== 84 consecutive 85% matching 9*lines ====
-XCUR=KHJ
-=====}
-====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:168694
-IBAN=AP  429458504876011
+==== 90 consecutive 85% matching 9*lines ====
 CCUR=KHJ
-NDEC=2
-FDAT=Mon Aug 27 00:00:00 CET 2023
-FSGN=+
-FSOL=41642
-XCUR=KHJ
-=====}
-====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:168708
-IBAN=AP  429458505296021
-CCUR=KHJ
-NDEC=2
-FDAT=Mon Aug 27 00:00:00 CET 2023
-FSGN=+
-==== 10 consecutive 85% matching 9*lines ====
+==== 29 consecutive 85% matching 9*lines ====
+FSGN=-
+FSOL=258129
 XCUR=APD
 =====}
 ====={ K__A4:ftp://***@kjhlkhj/KJA/AQKCPT/AQKCPT23-08-28_741.TXT:171065
@@ -182,5 +99,4 @@ IBAN=AP  434223609151088
 CCUR=APD
 NDEC=2
 FDAT=Mon Aug 27 00:00:00 CET 2023
-FSGN=+
-==== 7 consecutive 85% matching 9*lines ====
+==== 8 consecutive 85% matching 9*lines ====

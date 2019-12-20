@@ -13,6 +13,7 @@ BEGIN {
   if (argntail == "") argntail = 10
   delete tail_sizes[0]
   delete tail_words[0]
+  out = "fmt -s -w340"
 }
 
 # append e to tail,
@@ -120,9 +121,9 @@ function cmp_with_history(a, rightin, neweq,
 function breakdiff() {
   if (nseq > 0) {
     if (nseq > 1) {
-      print "==== "nseq" consecutive "int(pre_score * 100)"% matching "pre_window / 2"*lines ===="
+      print "==== "nseq" consecutive "int(pre_score * 100)"% matching "pre_window / 2"*lines ====" | out
     } else {
-      print pre_line
+      print pre_line | out
     }
     nseq = 0
   }
@@ -171,7 +172,7 @@ function growindow() {
     nseq++
   } else {
     breakdiff()
-    print
+    print | out
   }
 }
 

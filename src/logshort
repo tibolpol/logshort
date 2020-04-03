@@ -5,7 +5,7 @@
 # Synopsis : $myname [ argscore=number ] [ argsep=regexp ] [ argntail=number ]
 # argscore = min stability score, default 0.85
 # argsep = word separator, default "[-:;=/ \[\],{}()]+"
-# argntail = max number of lines in single match, default 10
+# argntail = max count of lines in single match, default 10
 
 BEGIN {
   if (argscore == "") argscore = 0.85
@@ -14,11 +14,14 @@ BEGIN {
   delete tail_sizes[0]
   delete tail_words[0]
   out = "fmt -s -w340"
+  explain=" shrunk by logshort"
 }
 
-# append e to tail,
+# append e[] to tail[],
 # keep tail size below depth by outshifting left items,
-# return sum of outshifted items
+# in: e[], depth
+# inout: tail[]
+# result: sum of outshifted items, not their count
 function tailput(tail, e, depth,
   l, f, el, result) {
   l = alength(tail)
@@ -49,20 +52,26 @@ function tailput(tail, e, depth,
   return result
 }
 
+# in: x, depth
+# inout: tail[]
+# result: sum of outshifted items
 function tailputx(tail, x, depth,
   e) {
   e[1] = x
   return tailput(tail, e, depth)
 }
 
-# erase array
+# erase array to[]
+# inout: to[]
 function raz(to) {
   for (i in to) {
     delete to[i]
   }
 }
 
-# copy array
+# copy array from[] to to[]
+# in: from[]
+# inout: to[]
 function arraycopy(from, to) {
   raz(to)
   for (i in from) {
@@ -70,7 +79,9 @@ function arraycopy(from, to) {
   }
 }
 
-# rotate array
+# rotate array from[]
+# in: rotate
+# inout: from[] 
 function leftrotate(from, rotate,
   l, x, j) {
   l = alength(from)
@@ -83,7 +94,9 @@ function leftrotate(from, rotate,
   }
 }
 
-# array length (not builtin in mawk)
+# array length (not builtin mawk)
+# in: from[]
+# result: from.size
 function alength(from,
   result) {
   for (i in from) {
@@ -92,10 +105,12 @@ function alength(from,
   return result
 }
 
-# Compare contiguous right parts of array a, of length rightin,
-# neweq maps {false,true} to each {different,equal} element and must be erased
+# Compare contiguous right parts of array a[], of length rightin,
+# neweq[] maps {false,true} to each {different,equal} element and must be erased
 # before call when we want a new comparison without stability history.
-# return stability score [0-1]
+# in: a[], rightin
+# inout: neweq[]
+# result: stability score in interval [0-1]
 function cmp_with_history(a, rightin, neweq,
   stabq, result, beq, left, right) {
   arraycopy(neweq, stabq)
@@ -116,66 +131,95 @@ function cmp_with_history(a, rightin, neweq,
 }
 
 # Break similar sequence
-# in : pre_line, pre_score, pre_window 
-# inout : nseq
-function breakdiff() {
-  if (nseq > 0) {
-    if (nseq > 1) {
-      print "==== "nseq" consecutive "int(pre_score * 100)"% matching "pre_window / 2"*lines ====" | out
+#   pre_line last line not printed
+#   pre_score last good window_score
+#   pre_window last window_lines count
+#   window_hide_count count lines not printed
+#   explain who am I
+#   last_lnum last printed line FNR
+#   pre_lnum last not printed line FNR
+#   window_last broken window last FNR
+# in : pre_line, pre_lnum, pre_score, pre_window, last_lnum
+# inout : window_hide_count, explain
+# out: window_last
+function window_break(pre_lnum) {
+  if (window_hide_count > 0) {
+    if (last_lnum + window_hide_count != pre_lnum) print "BUG assert last_lnum + window_hide_count == pre_lnum" > "/dev/stderr"
+    if (window_hide_count > 1) {
+      print "==== "last_lnum+1"-"pre_lnum": "window_hide_count" consecutive "int(pre_score * 100)"% matching "pre_window / 2"*lines"explain" ====" | out
+      window_last = pre_lnum
+      explain=""
     } else {
       print pre_line | out
     }
-    nseq = 0
+    window_hide_count = 0
   }
 }
 
 # Enlarge window as much as possible until score match
-# in : lsizes, tail_sizes, tail_words, argscore
-# inout : right, both, window
-# out : score, left, eqwords
-function growindow() {
-  for ( ; window <= lsizes && score < argscore; window += 2) {
-    right = right + tail_sizes[lsizes + 1 - (window / 2)]
-    both = both + tail_sizes[lsizes - window + 1] + tail_sizes[lsizes - window + 2]
-    left = both - right
-    if (left == right) {
-      raz(eqwords)
-      score = cmp_with_history(tail_words, right, eqwords)
+#   argscore minimum stability score
+#   tail_lines count lines in scope
+#   tail_sizes[] map word count to line
+#   tail_words[] words in scope
+#   window_hide_count count lines not printed
+#   window_eqwords[] map stability boolean to word in window history
+#   window_lines count lines in window, always even
+#   window_words count words in window
+#   window_left count words on the left window side
+#   window_right count words on the right window side
+#   window_score stability score for window
+# in : tail_lines, tail_sizes[], tail_words[], argscore, windows_age
+# inout : window_right, window_words, window_lines
+# out : window_score, window_left, window_eqwords[]
+function window_grow() {
+  for ( ; window_lines <= tail_lines && # count below limit
+      window_score < argscore && # score below target
+      window_hide_count <= window_lines / 2 && # window output below half window size
+      window_last + window_lines <= FNR; # window don't overlap last window
+      window_lines += 2) { # grow by 2
+    window_right = window_right + tail_sizes[tail_lines + 1 - (window_lines / 2)]
+    window_words = window_words + tail_sizes[tail_lines - window_lines + 1] + tail_sizes[tail_lines - window_lines + 2]
+    window_left = window_words - window_right
+    if (window_left == window_right) {
+      raz(window_eqwords)
+      window_score = cmp_with_history(tail_words, window_right, window_eqwords)
     }
   }
 }
 
 {
-  lwordsin = split($0, words, argsep)
-  score = 0
-  tailput(tail_words, words, alength(tail_words) + lwordsin - tailputx(tail_sizes, lwordsin, argntail*2))
-  lsizes = alength(tail_sizes)
-  if (nseq == 0) {
-    right = both = 0
-    window = 2
-    growindow()
+  lwordsin = split($0, words, argsep) # count words in current line
+  window_score = 0
+  lwordsout = tailputx(tail_sizes, lwordsin, argntail*2) # feed tail_sizes[] and lwordsout
+  tailput(tail_words, words, alength(tail_words) + lwordsin - lwordsout) # feed tail_words[]
+  tail_lines = alength(tail_sizes) # count lines in scope
+  if (window_hide_count) {
+    window_right = window_right + lwordsin - tail_sizes[tail_lines - (pre_window / 2)] # count words on the right
+    if (window_left == window_right) {
+      leftrotate(window_eqwords, lwordsin) # shift window_eqwords[]
+      window_score = cmp_with_history(tail_words, window_right, window_eqwords) # feed window_eqwords[] and window_score
+    }
+    if (window_score < argscore) {
+      window_words = window_left + window_right
+      window_grow()
+    }
   } else {
-    right = right + lwordsin - tail_sizes[lsizes - (pre_window / 2)]
-    if (left == right) {
-      leftrotate(eqwords, lwordsin)
-      score = cmp_with_history(tail_words, right, eqwords)
-    }
-    if (score < argscore) {
-      both = left + right
-      growindow()
-    }
+    window_right = window_words = 0
+    window_lines = 2
+    window_grow()
   }
-  if (score >= argscore) {
-    pre_score = score
+  if (window_score >= argscore) {
+    pre_score = window_score
     pre_line = $0
-    pre_window = window - 2
-    nseq++
+    pre_window = window_lines - 2
+    window_hide_count++
   } else {
-    breakdiff()
+    window_break(FNR-1)
     print | out
+    last_lnum = FNR
   }
 }
 
 END {
-  breakdiff()
+  window_break(FNR)
 }

@@ -2,7 +2,7 @@
 # stdin : logfile
 # stdout : copy replacing consecutive stable lines by a single placeholder
 # Comparison is done not by character but by word
-# Synopsis : $myname [ argscore=number ] [ argsep=regexp ] [ argntail=number ]
+# Synopsis : $myname [ -v argscore=number ] [ -v argsep=regexp ] [ -v argntail=number ]
 # argscore = min stability score, default 0.85
 # argsep = word separator, default "[-:;=/ \[\],{}()]+"
 # argntail = max count of lines in single match, default 10
@@ -14,7 +14,7 @@ BEGIN {
   delete tail_sizes[0]
   delete tail_words[0]
   out = "fmt -s -w340"
-  explain=" shrunk by logshort"
+  explain_once=sprintf(" shrunk by logshort argscore=%.2f argsep=\"%s\" argntail=%d", argscore, argsep, argntail)
 }
 
 # append e[] to tail[],
@@ -135,24 +135,23 @@ function cmp_with_history(a, rightin, neweq,
 #   pre_score last good window_score
 #   pre_window last window_lines count
 #   window_hide_count count lines not printed
-#   explain who am I
+#   explain_once who am I
 #   last_lnum last printed line FNR
 #   pre_lnum last not printed line FNR
 #   window_last broken window last FNR
-# in : pre_line, pre_lnum, pre_score, pre_window, last_lnum
-# inout : window_hide_count, explain
+# in : pre_line, pre_lnum, pre_score, pre_window, window_hide_count, last_lnum
+# inout : explain_once
 # out: window_last
 function window_break(pre_lnum) {
   if (window_hide_count > 0) {
     if (last_lnum + window_hide_count != pre_lnum) print "BUG assert last_lnum + window_hide_count == pre_lnum" > "/dev/stderr"
     if (window_hide_count > 1) {
-      print "==== "last_lnum+1"-"pre_lnum": "window_hide_count" consecutive "int(pre_score * 100)"% matching "pre_window / 2"*lines"explain" ====" | out
+      print "==== "last_lnum+1"-"pre_lnum": "window_hide_count" consecutive "int(pre_score * 100)"% matching "pre_window / 2"*lines"explain_once" ====" | out
       window_last = pre_lnum
-      explain=""
+      explain_once=""
     } else {
       print pre_line | out
     }
-    window_hide_count = 0
   }
 }
 
@@ -168,7 +167,7 @@ function window_break(pre_lnum) {
 #   window_left count words on the left window side
 #   window_right count words on the right window side
 #   window_score stability score for window
-# in : tail_lines, tail_sizes[], tail_words[], argscore, windows_age
+# in : tail_lines, tail_sizes[], tail_words[], argscore, window_hide_count
 # inout : window_right, window_words, window_lines
 # out : window_score, window_left, window_eqwords[]
 function window_grow() {
@@ -215,6 +214,7 @@ function window_grow() {
     window_hide_count++
   } else {
     window_break(FNR-1)
+    window_hide_count = 0
     print | out
     last_lnum = FNR
   }
